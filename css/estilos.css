@@ -14,7 +14,7 @@ body{
 /*Fuente*/
 @font-face {
     font-family: "SilkyQueen";
-    src: url(/fonts/SilkyQueen.otf)
+    src: url(/fonts/SilkyQueen.otf);
 }
 /* Cabecera */
 #header{
@@ -66,7 +66,7 @@ main div section{
     align-content: center;
     justify-content: center;
 }
-main .container{
+.container_main_catalogo{
     margin-top: 200px;
     margin-bottom: 75px;
     align-items: center;
