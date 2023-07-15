@@ -190,6 +190,10 @@ body {
     align-content: center;
     justify-content: center;
   }
+  #main .col-12col-lg-4{
+    width: 150px;
+    height: 150px;
+  }
   #footer {
     height: 448px;
   }
