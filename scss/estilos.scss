@@ -193,6 +193,12 @@ $full-width: 100%;
             justify-content: center;
         }
     }
+    #main{
+        .row{
+            width: 150px;
+            align-content: center;
+        }
+    }
     #footer{
         height: 448px;
         .container{
