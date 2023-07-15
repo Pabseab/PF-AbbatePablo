@@ -1,0 +1,14 @@
+/*condicionales*/
+
+$mainfooter: 1;
+
+@if $mainfooter == normal{
+    body{
+        background-color: $fondo-primario;
+    }
+}
+@else if $mainfooter == 1{
+    body{
+        background-color: black;
+    }
+}
