@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/*Variables*/
+$fondo-primario: beige;
+$color:rgba(78, 35, 35, 0.685);
+$full-width: 100%;
+/*Fuente*/
+@font-face {
+    font-family: "SilkyQueen";
+    src: url(/fonts/SilkyQueen.otf);
+}
+/* Cabecera */
+#header{
+    background-color: $fondo-primario;
+    color: $color;
+    grid-area: header;
+    font-family: "SilkyQueen";
+    width: $full-width;
+    height: 150px;
+    .fixed-top{
+        background-color: $fondo-primario;
+        height: 150px;
+        }
+    .container{
+        margin-top: 20px;
+    }
+    header h1{
+        font-size: 50px;
+        font-weight: 500;
+        text-align: left;
+        margin: 15px;
+        }
+    header h2{
+        font-size: 30px;
+        font-weight: 200;
+        text-align: left;
+        margin: 15px;
+        }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    a{
+        color: rgba(78, 35, 35, 0.685);
+        font-family: "SilkyQueen";
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+        }
+}
+/*Contenido principal*/
+#main{
+    background-color: white;
+    background-position: center;
+    grid-area: main;
+    .container-fluid{
+        margin-top: 50px;
+    }
+    .carousel-item{
+        align-items: center;
+        justify-content: center;
+    }
+    .portada2{
+        padding-left: 150px;
+        padding-right: 150px;
+        margin: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: end;
+        img{
+            height: 400px;
+        }
+        p{
+            font-size: 35px;
+        }
+    }
+    .portada3{
+        padding-left: 150px;
+        padding-right: 150px;
+        margin: 25px;
+        display: flex;
+        flex-direction: row;
+        img{
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            font-size: 35px;
+        }
+    }
+    .libros{
+        background-color: bisque;
+        width: 250px;
+        height: 375px;
+        margin: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-style: hidden;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        img{
+            height: 160px;
+        }
+        h3{
+            height: 40px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        p,
+        h4,
+        button{
+            height: 40px;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 2px;
+        }
+        button:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 1px rgb(0, 0, 0);
+        }
+    }
+}
+/*Pie de pagina*/
+#footer{
+    background-color: $fondo-primario;
+    width: $full-width;
+    height: 162px;
+    grid-area: footer;
+    .pagos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+            margin-top: 16px;
+            color: $color;
+        }
+        img{
+            padding: 5px;
+        }
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+            margin-top: 16px;
+            color: $color;
+        }
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        a{
+            padding: 10px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+@media (max-width:576px){
+    #header{
+        height: 250px;
+        .fixed-top{
+            height: 250px;
+        }
+        .container{
+            height: 250px;
+        }
+        nav{
+            align-content: center;
+            justify-content: center;
+        }
+    }
+    #footer{
+        height: 448px;
+        .container{
+            height: 448px;
+        }
+    }
+}
+
