@@ -1,8 +1,4 @@
-/*Variables*/ /*condicionales*/
-body {
-  background-color: black;
-}
-
+/*Variables*/ /*generales*/
 * {
   padding: 0;
   margin: 0;
@@ -206,6 +202,17 @@ body {
   #footer .container {
     height: 448px;
   }
+}
+/*condicionales*/
+#header {
+  background-color: aquamarine;
+}
+#header .fixed-top {
+  background-color: aquamarine;
+}
+
+#footer {
+  background-color: aquamarine;
 }
 
 /*# sourceMappingURL=estilos.css.map */
