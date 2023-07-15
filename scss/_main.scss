@@ -1,0 +1,76 @@
+/*Contenido principal*/
+#main{
+    background-color: white;
+    background-position: center;
+    grid-area: main;
+    .container-fluid{
+        margin-top: 50px;
+    }
+    .carousel-item{
+        align-items: center;
+        justify-content: center;
+    }
+    .portada2{
+        padding-left: 150px;
+        padding-right: 150px;
+        margin: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: end;
+        img{
+            height: 400px;
+        }
+        p{
+            font-size: 35px;
+        }
+    }
+    .portada3{
+        padding-left: 150px;
+        padding-right: 150px;
+        margin: 25px;
+        display: flex;
+        flex-direction: row;
+        img{
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            font-size: 35px;
+        }
+    }
+    .libros{
+        background-color: bisque;
+        width: 250px;
+        height: 375px;
+        margin: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-style: hidden;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        img{
+            height: 160px;
+        }
+        h3{
+            height: 40px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        p,
+        h4,
+        button{
+            height: 40px;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 2px;
+        }
+        button:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 1px rgb(0, 0, 0);
+        }
+    }
+}

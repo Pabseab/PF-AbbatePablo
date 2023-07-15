@@ -1,0 +1,40 @@
+/* Cabecera */
+#header{
+    background-color: $fondo-primario;
+    color: $color;
+    grid-area: header;
+    font-family: "SilkyQueen";
+    width: $full-width;
+    height: 150px;
+    .fixed-top{
+        background-color: $fondo-primario;
+        height: 150px;
+        }
+    .container{
+        margin-top: 20px;
+    }
+    header h1{
+        font-size: 50px;
+        font-weight: 500;
+        text-align: left;
+        margin: 15px;
+        }
+    header h2{
+        font-size: 30px;
+        font-weight: 200;
+        text-align: left;
+        margin: 15px;
+        }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    a{
+        color: rgba(78, 35, 35, 0.685);
+        font-family: "SilkyQueen";
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+        }
+}
