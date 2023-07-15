@@ -3,12 +3,12 @@
 $mainfooter: 1;
 
 @if $mainfooter == normal{
-    body{
+    header{
         background-color: $fondo-primario;
     }
 }
 @else if $mainfooter == 1{
-    body{
+    header{
         background-color: black;
     }
 }
