@@ -1,0 +1,14 @@
+/*maps*/
+
+$fondos-boton:(
+    primario: rgb(147, 130, 224),
+    secundario: rgb(187, 187, 180),
+    terciario: rgb(199, 199, 144),
+);
+
+.libros{
+    button{
+        background-color: map-get($fondos-boton, primario);
+    }
+}
+
