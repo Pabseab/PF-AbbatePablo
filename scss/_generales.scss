@@ -1,0 +1,19 @@
+/*generales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/*Fuente*/
+@font-face {
+    font-family: "SilkyQueen";
+    src: url(/fonts/SilkyQueen.otf);
+}

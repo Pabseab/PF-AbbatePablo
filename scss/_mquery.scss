@@ -1,0 +1,28 @@
+/*media queries*/
+@media (max-width:576px){
+    #header{
+        height: 250px;
+        .fixed-top{
+            height: 250px;
+        }
+        .container{
+            height: 250px;
+        }
+        nav{
+            align-content: center;
+            justify-content: center;
+        }
+    }
+    #main{
+        .col-12col-lg-4{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    #footer{
+        height: 448px;
+        .container{
+            height: 448px;
+        }
+    }
+}

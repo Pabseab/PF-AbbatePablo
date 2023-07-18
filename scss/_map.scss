@@ -1,0 +1,17 @@
+/*maps*/
+
+$fondos-boton:(
+    primario: rgb(188, 190, 158),
+    secundario: rgb(206, 206, 200),
+    terciario: rgb(236, 236, 170),
+);
+
+.linea1:hover{
+        background-color: map-get($map: $fondos-boton, $key: primario );
+    }
+.linea2:hover{
+    background-color: map-get($map: $fondos-boton, $key: secundario);
+}
+.linea3:hover{
+    background-color: map-get($map: $fondos-boton, $key: terciario);
+}

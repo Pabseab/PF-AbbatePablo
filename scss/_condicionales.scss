@@ -1,0 +1,26 @@
+/*condicionales*/
+
+$mainfooter: otoño;
+
+@if $mainfooter == otoño{
+    #header{
+        background-color: $fondo-primario;
+        .fixed-top{
+            background-color: $fondo-primario;
+        }
+    }
+    #footer{
+        background-color: $fondo-primario;
+    }
+}
+@else if $mainfooter == verano{
+    #header{
+        background-color: aquamarine;
+        .fixed-top{
+            background-color: aquamarine;
+        }
+    }
+    #footer{
+        background-color: aquamarine;
+    }
+}
