@@ -129,7 +129,7 @@ body {
   border-style: hidden;
   border: none;
   border-radius: 10px;
-  transition: width 2s;
+  transition: width 5s;
 }
 #main .libros button:hover {
   transform: translate(3px, 3px);
