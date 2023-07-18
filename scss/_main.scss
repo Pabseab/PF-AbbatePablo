@@ -3,12 +3,18 @@
     background-color: white;
     background-position: center;
     grid-area: main;
+    @mixin items-content($ejeX,$ejeY){
+        justify-content: $ejeX;
+        align-items: $ejeY;
+    }
     .container-fluid{
         margin-top: 50px;
     }
     .carousel-item{
-        align-items: center;
-        justify-content: center;
+        @include items-content(center, center);
+    }
+    .titulos_portada{
+        font-size: 65px;
     }
     .portada2{
         padding-left: 150px;
@@ -16,13 +22,12 @@
         margin: 25px;
         display: flex;
         flex-direction: row;
-        align-items: end;
-        justify-content: end;
+        @include items-content(end, end);
         img{
             height: 400px;
         }
         p{
-            font-size: 35px;
+            @extend .titulos_portada;
         }
     }
     .portada3{
@@ -33,15 +38,14 @@
         flex-direction: row;
         img{
             height: 400px;
-            align-items: center;
-            justify-content: center;
+            @include items-content(center, center);
         }
         p{
-            font-size: 35px;
+            @extend .titulos_portada;
         }
     }
     .libros{
-        background-color: bisque;
+        background: linear-gradient(to right, rgb(236, 236, 164),rgb(236, 236, 202));
         width: 250px;
         height: 375px;
         margin: 30px;
@@ -66,11 +70,15 @@
             height: 40px;
             padding: 10px;
             font-size: 15px;
-            border-radius: 2px;
+            border-style: hidden;
+            border: none;
+            border-radius: 10px;
+            transition: width 2s;
         }
         button:hover{
-        transform: scale(1.1);
-        box-shadow: 0 0 0 1px rgb(0, 0, 0);
+        transform: translate(3px, 3px);
+        box-shadow: 0 0 0 1px rgb(184, 156, 98);
+        cursor: pointer;
         }
     }
 }

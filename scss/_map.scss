@@ -1,14 +1,17 @@
 /*maps*/
 
 $fondos-boton:(
-    primario: rgb(147, 130, 224),
-    secundario: rgb(187, 187, 180),
-    terciario: rgb(199, 199, 144),
+    primario: rgb(188, 190, 158),
+    secundario: rgb(206, 206, 200),
+    terciario: rgb(236, 236, 170),
 );
 
-.libros{
-    button{
-        background-color: map-get($fondos-boton, primario);
+.linea1:hover{
+        background-color: map-get($map: $fondos-boton, $key: primario );
     }
+.linea2:hover{
+    background-color: map-get($map: $fondos-boton, $key: secundario);
 }
-
+.linea3:hover{
+    background-color: map-get($map: $fondos-boton, $key: terciario);
+}

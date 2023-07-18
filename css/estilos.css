@@ -55,6 +55,9 @@ body {
   padding: 20px;
   font-size: 20px;
 }
+#header a:hover {
+  transform: scale(1.2);
+}
 
 /*Contenido principal*/
 #main {
@@ -66,8 +69,11 @@ body {
   margin-top: 50px;
 }
 #main .carousel-item {
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+#main .titulos_portada, #main .portada3 p, #main .portada2 p {
+  font-size: 65px;
 }
 #main .portada2 {
   padding-left: 150px;
@@ -75,14 +81,11 @@ body {
   margin: 25px;
   display: flex;
   flex-direction: row;
-  align-items: end;
   justify-content: end;
+  align-items: end;
 }
 #main .portada2 img {
   height: 400px;
-}
-#main .portada2 p {
-  font-size: 35px;
 }
 #main .portada3 {
   padding-left: 150px;
@@ -93,14 +96,11 @@ body {
 }
 #main .portada3 img {
   height: 400px;
-  align-items: center;
   justify-content: center;
-}
-#main .portada3 p {
-  font-size: 35px;
+  align-items: center;
 }
 #main .libros {
-  background-color: bisque;
+  background: linear-gradient(to right, rgb(236, 236, 164), rgb(236, 236, 202));
   width: 250px;
   height: 375px;
   margin: 30px;
@@ -126,11 +126,15 @@ body {
   height: 40px;
   padding: 10px;
   font-size: 15px;
-  border-radius: 2px;
+  border-style: hidden;
+  border: none;
+  border-radius: 10px;
+  transition: width 2s;
 }
 #main .libros button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 0 1px rgb(0, 0, 0);
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 1px rgb(184, 156, 98);
+  cursor: pointer;
 }
 
 /*Pie de pagina*/
@@ -213,6 +217,19 @@ body {
 
 #footer {
   background-color: beige;
+}
+
+/*maps*/
+.linea1:hover {
+  background-color: rgb(188, 190, 158);
+}
+
+.linea2:hover {
+  background-color: rgb(206, 206, 200);
+}
+
+.linea3:hover {
+  background-color: rgb(236, 236, 170);
 }
 
 /*# sourceMappingURL=estilos.css.map */
