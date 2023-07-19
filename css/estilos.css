@@ -217,27 +217,32 @@ body {
 }
 
 /*media queries*/
-@media (max-width: 576px) {
+@media (max-width: 420px) {
   #header {
-    height: 250px;
+    width: 420px;
+    height: 445px;
   }
   #header .fixed-top {
-    height: 250px;
+    height: 445px;
   }
   #header .container {
-    height: 250px;
+    height: 445px;
   }
   #header nav {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
+  }
+  #main {
+    width: 420px;
   }
   #main .col-12col-lg-4 {
     width: 150px;
     height: 150px;
   }
   #footer {
+    width: 420px;
     height: 448px;
   }
   #footer .container {

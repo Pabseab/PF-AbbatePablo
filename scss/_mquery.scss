@@ -1,27 +1,35 @@
 /*media queries*/
-@media (max-width:576px){
+
+
+@media (max-width:420px){
     #header{
-        height: 250px;
+        width: 420px;
+        height: 445px;
+        @mixin items-content($ejeX,$ejeY){
+            justify-content: $ejeX;
+            align-items: $ejeY;
+        }
         .fixed-top{
-            height: 250px;
+            height: 445px;
         }
         .container{
-            height: 250px;
+            height: 445px;
         }
         nav{
             display: flex;
             flex-direction: column;
-            align-content: center;
-            justify-content: center;
+            @include items-content(left, center);  
         }
     }
     #main{
+        width: 420px;
         .col-12col-lg-4{
             width: 150px;
             height: 150px;
         }
     }
     #footer{
+        width: 420px;
         height: 448px;
         .container{
             height: 448px;
