@@ -14,7 +14,7 @@
         @include items-content(center, center);
     }
     .titulos_portada{
-        font-size: 65px;
+        font-size: 30px;
     }
     .portada2{
         padding-left: 150px;
@@ -81,4 +81,37 @@
         cursor: pointer;
         }
     }
+    .formulario{
+        background-image: url(../img/fondo\ contacto.jpg);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 1200px;
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        @include items-content(center, center);
+        section{
+            margin-top: 20px;
+        }
+        .label{
+            margin: 10px;
+        }
+        button{
+            height: 40px;
+            padding: 10px;
+            font-size: 15px;
+            border-style: hidden;
+            border: none;
+            border-radius: 10px;
+            transition: width 5s;
+        }
+        button:hover{
+            transform: translate(3px, 3px);
+            box-shadow: 0 0 0 1px rgb(184, 156, 98);
+            cursor: pointer;
+            }
+    }
+    .row{
+        @include items-content(center, center);
+    }   
 }

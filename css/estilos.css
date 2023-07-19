@@ -73,7 +73,7 @@ body {
   align-items: center;
 }
 #main .titulos_portada, #main .portada3 p, #main .portada2 p {
-  font-size: 65px;
+  font-size: 30px;
 }
 #main .portada2 {
   padding-left: 150px;
@@ -136,6 +136,41 @@ body {
   box-shadow: 0 0 0 1px rgb(184, 156, 98);
   cursor: pointer;
 }
+#main .formulario {
+  background-image: url(../img/fondo\ contacto.jpg);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 1200px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main .formulario section {
+  margin-top: 20px;
+}
+#main .formulario .label {
+  margin: 10px;
+}
+#main .formulario button {
+  height: 40px;
+  padding: 10px;
+  font-size: 15px;
+  border-style: hidden;
+  border: none;
+  border-radius: 10px;
+  transition: width 5s;
+}
+#main .formulario button:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 1px rgb(184, 156, 98);
+  cursor: pointer;
+}
+#main .row {
+  justify-content: center;
+  align-items: center;
+}
 
 /*Pie de pagina*/
 #footer {
@@ -193,6 +228,8 @@ body {
     height: 250px;
   }
   #header nav {
+    display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
   }
