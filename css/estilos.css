@@ -219,34 +219,67 @@ body {
 /*media queries*/
 @media (max-width: 420px) {
   #header {
-    width: 420px;
-    height: 445px;
+    height: 180px;
   }
   #header .fixed-top {
-    height: 445px;
+    height: 180px;
   }
   #header .container {
-    height: 445px;
+    height: 180px;
+    text-align: center;
   }
-  #header nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
+  #header h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 15px;
   }
-  #main {
-    width: 420px;
+  #header h2 {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 15px;
+  }
+  #header a {
+    font-size: 12px;
   }
   #main .col-12col-lg-4 {
     width: 150px;
     height: 150px;
   }
+  #main .imgcarrusel {
+    width: 100vh;
+  }
+  #main .portada2 img,
+  #main .portada3 img {
+    height: 200px;
+  }
+  #main .portada2 p,
+  #main .portada3 p {
+    font-size: 12px;
+  }
+  #main .libros {
+    width: 70%;
+  }
   #footer {
-    width: 420px;
-    height: 448px;
+    height: 350px;
   }
   #footer .container {
-    height: 448px;
+    height: 350px;
+  }
+  #footer .pagos img {
+    width: 30px;
+  }
+  #footer .pagos p {
+    font-size: 10px;
+  }
+  #footer .contacto img {
+    width: 30px;
+  }
+  #footer .contacto p {
+    font-size: 10px;
+  }
+  #footer nav a {
+    width: 30px;
+    margin: 10px;
   }
 }
 /*condicionales*/

@@ -1,38 +1,80 @@
 /*media queries*/
 
-
 @media (max-width:420px){
     #header{
-        width: 420px;
-        height: 445px;
+        height: 180px;
         @mixin items-content($ejeX,$ejeY){
             justify-content: $ejeX;
             align-items: $ejeY;
         }
         .fixed-top{
-            height: 445px;
+            height: 180px;
         }
         .container{
-            height: 445px;
+            height: 180px;
+            text-align: center;
         }
-        nav{
-            display: flex;
-            flex-direction: column;
-            @include items-content(left, center);  
+        h1{
+            font-size: 30px;
+            font-weight: 500;
+            margin: 15px;
+            }
+        h2{
+            font-size: 18px;
+            font-weight: 200;
+            margin: 15px;
+            }
+        a{
+            font-size: 12px;
         }
     }
     #main{
-        width: 420px;
         .col-12col-lg-4{
             width: 150px;
             height: 150px;
         }
+        .imgcarrusel{
+            width: 100vh;
+            }
+        .portada2,
+        .portada3{
+            img{
+                height: 200px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        .libros{
+            width: 70%;
+        }
     }
     #footer{
-        width: 420px;
-        height: 448px;
+        height: 350px;
         .container{
-            height: 448px;
+            height: 350px;
+        }
+        .pagos{
+            img{
+                width: 30px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        .contacto{
+            img{
+                width: 30px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        nav{
+            a{
+                width: 30px;
+                margin: 10px;
+            }
         }
     }
 }
