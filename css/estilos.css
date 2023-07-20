@@ -78,7 +78,8 @@ body {
 #main .portada2 {
   padding-left: 150px;
   padding-right: 150px;
-  margin: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -90,7 +91,8 @@ body {
 #main .portada3 {
   padding-left: 150px;
   padding-right: 150px;
-  margin: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: row;
 }
@@ -218,10 +220,15 @@ body {
 
 /*media queries*/
 @media (max-width: 420px) {
+  body {
+    width: 100vh;
+  }
   #header {
+    width: 100vh;
     height: 180px;
   }
   #header .fixed-top {
+    width: 100vh;
     height: 180px;
   }
   #header .container {
@@ -239,13 +246,16 @@ body {
     margin: 15px;
   }
   #header a {
-    font-size: 12px;
+    font-size: 10px;
   }
-  #main .col-12col-lg-4 {
-    width: 150px;
-    height: 150px;
+  #main {
+    width: 100vh;
   }
   #main .imgcarrusel {
+    max-width: 420px;
+    width: 100vh;
+  }
+  #main .container-fluid {
     width: 100vh;
   }
   #main .portada2 img,
@@ -257,13 +267,32 @@ body {
     font-size: 12px;
   }
   #main .libros {
-    width: 70%;
+    width: 150px;
+    height: 225px;
+    margin: 30px;
+    padding: 10px;
+  }
+  #main .libros img {
+    height: 96px;
+  }
+  #main .libros h3 {
+    height: 24px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  #main .libros p,
+  #main .libros h4,
+  #main .libros button {
+    height: 24px;
+    padding: 10px;
+    font-size: 7px;
   }
   #footer {
-    height: 350px;
+    width: 100vh;
+    height: 300px;
   }
   #footer .container {
-    height: 350px;
+    height: 300px;
   }
   #footer .pagos img {
     width: 30px;

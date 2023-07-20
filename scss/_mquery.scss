@@ -1,13 +1,18 @@
 /*media queries*/
 
 @media (max-width:420px){
+    body{
+        width: 100vh;
+    }
     #header{
+        width: 100vh;
         height: 180px;
         @mixin items-content($ejeX,$ejeY){
             justify-content: $ejeX;
             align-items: $ejeY;
         }
         .fixed-top{
+            width: 100vh;
             height: 180px;
         }
         .container{
@@ -25,16 +30,21 @@
             margin: 15px;
             }
         a{
-            font-size: 12px;
+            font-size: 10px;
         }
     }
     #main{
-        .col-12col-lg-4{
-            width: 150px;
-            height: 150px;
+        width: 100vh;
+        @mixin items-content($ejeX,$ejeY){
+            justify-content: $ejeX;
+            align-items: $ejeY;
         }
         .imgcarrusel{
+            max-width: 420px;
             width: 100vh;
+            }
+        .container-fluid{
+                width: 100vh;
             }
         .portada2,
         .portada3{
@@ -46,13 +56,32 @@
             }
         }
         .libros{
-            width: 70%;
+            width: 150px;
+            height: 225px;
+            margin: 30px;
+            padding: 10px;
+            img{
+                height: 96px;
+            }
+            h3{
+                height: 24px;
+                padding: 10px;
+                font-size: 12px;
+            }
+            p,
+            h4,
+            button{
+                height: 24px;
+                padding: 10px;
+                font-size: 7px;
+            }
         }
     }
     #footer{
-        height: 350px;
+        width: 100vh;
+        height: 300px;
         .container{
-            height: 350px;
+            height: 300px;
         }
         .pagos{
             img{

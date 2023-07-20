@@ -19,7 +19,8 @@
     .portada2{
         padding-left: 150px;
         padding-right: 150px;
-        margin: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         display: flex;
         flex-direction: row;
         @include items-content(end, end);
@@ -33,7 +34,8 @@
     .portada3{
         padding-left: 150px;
         padding-right: 150px;
-        margin: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         display: flex;
         flex-direction: row;
         img{
