@@ -251,12 +251,10 @@ body {
   #main {
     width: 100vh;
   }
-  #main .imgcarrusel {
-    max-width: 420px;
-    width: 100vh;
-  }
-  #main .container-fluid {
-    width: 100vh;
+  #main .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   #main .portada2 img,
   #main .portada3 img {
@@ -269,22 +267,22 @@ body {
   #main .libros {
     width: 150px;
     height: 225px;
-    margin: 30px;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
   }
   #main .libros img {
     height: 96px;
   }
   #main .libros h3 {
     height: 24px;
-    padding: 10px;
+    padding: 5px;
     font-size: 12px;
   }
   #main .libros p,
   #main .libros h4,
   #main .libros button {
     height: 24px;
-    padding: 10px;
+    padding: 5px;
     font-size: 7px;
   }
   #footer {
