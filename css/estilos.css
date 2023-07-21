@@ -75,6 +75,10 @@ body {
 #main .titulos_portada, #main .portada3 p, #main .portada2 p {
   font-size: 30px;
 }
+#main p {
+  font-size: 50px;
+  text-align: center;
+}
 #main .portada2 {
   padding-left: 150px;
   padding-right: 150px;
@@ -251,6 +255,12 @@ body {
   #main {
     width: 100vh;
   }
+  #main .container-fluid {
+    margin-top: 20px;
+  }
+  #main p {
+    font-size: 15px;
+  }
   #main .section {
     display: flex;
     flex-direction: column;
@@ -284,6 +294,51 @@ body {
     height: 24px;
     padding: 5px;
     font-size: 7px;
+  }
+  #main .formulario {
+    background-image: url(../img/fondo\ contacto\ 2.jpg);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 560px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .formulario section {
+    width: 200px;
+    margin-top: 20px;
+  }
+  #main .formulario .label {
+    margin: 10px;
+  }
+  #main .formulario button {
+    height: 15px;
+    padding: 5px;
+    font-size: 9px;
+    border-style: hidden;
+    border: none;
+    border-radius: 3px;
+    transition: width 5s;
+  }
+  #main .formulario button:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 1px rgb(184, 156, 98);
+    cursor: pointer;
+  }
+  #main .formulario .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  #main .formulario .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
   #footer {
     width: 100vh;

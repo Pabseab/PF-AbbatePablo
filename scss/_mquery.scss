@@ -39,6 +39,12 @@
             justify-content: $ejeX;
             align-items: $ejeY;
         }
+        .container-fluid{
+            margin-top: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
         .section{
             display: flex;
             flex-direction: column;
@@ -74,7 +80,51 @@
                 font-size: 7px;
             }
         }
-    }
+        .formulario{
+            background-image: url(../img/fondo\ contacto\ 2.jpg);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 560px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            @include items-content(center, center);
+            section{
+                width: 200px;
+                margin-top: 20px;
+            }
+            .label{
+                margin: 10px;
+            }
+            button{
+                height: 15px;
+                padding: 5px;
+                font-size: 9px;
+                border-style: hidden;
+                border: none;
+                border-radius: 3px;
+                transition: width 5s;
+            }
+            button:hover{
+                transform: translate(3px, 3px);
+                box-shadow: 0 0 0 1px rgb(184, 156, 98);
+                cursor: pointer;
+                }
+                .map-responsive{
+                    overflow:hidden;
+                    padding-bottom:56.25%;
+                    position:relative;
+                    height:0;
+                }
+                .map-responsive iframe{
+                    left:0;
+                    top:0;
+                    height:100%;
+                    width:100%;
+                    position:absolute;
+                }
+        }  
+    }     
     #footer{
         width: 100vh;
         height: 300px;
