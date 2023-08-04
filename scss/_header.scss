@@ -1,43 +1,48 @@
 /* Cabecera */
 #header{
+    width: $full-width;
+    height: 130px;
     background-color: $fondo-primario;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     color: $color;
     grid-area: header;
-    font-family: "SilkyQueen";
-    width: $full-width;
-    height: 150px;
-    .fixed-top{
+    font-family: "Amanda";
+    .container-fluid{
         background-color: $fondo-primario;
-        height: 150px;
-        }
-    .container{
-        margin-top: 20px;
+        color: $color;
     }
-    header h1{
-        font-size: 50px;
-        font-weight: 500;
-        text-align: left;
-        margin: 15px;
+    .item1{
+        .navbar-brand{
+            display: flex;
+            @include items-content(center, none);
+            background-color: $fondo-primario;
+            img{
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                border-radius: 10px;
+            }
         }
-    header h2{
-        font-size: 30px;
-        font-weight: 200;
-        text-align: left;
-        margin: 15px;
-        }
-    nav{
+    }
+    .item2{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include items-content(none, center);
+        h1{
+            margin: 0px;
+            font-size: 50px;
+            font-weight: 500; 
         }
-    a{
-        color: rgba(78, 35, 35, 0.685);
-        font-family: "SilkyQueen";
-        text-decoration: none;
-        padding: 20px;
-        font-size: 20px;
+    }
+    .item3{
+        li{
+            padding: 15px;
         }
-    a:hover{
-        transform: scale(1.2);
+        a,
+        .busqueda
+        .busqueda2{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        form{
+            margin-right: 80px;
+        }
     }
 }

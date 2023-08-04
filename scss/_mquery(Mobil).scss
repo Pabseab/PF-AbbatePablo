@@ -1,0 +1,233 @@
+/*media queries*/
+
+@media (min-width:320px) and (max-width:480px){
+    body{
+        width: $full-width;
+        height: $full-height;
+    }
+    #header{
+        width: $full-width;
+        height: 90px;
+        .encabezado{
+            margin: 0 10px 0 10px;
+        }
+        .item1{
+            .navbar-brand{
+                display: flex;
+                @include items-content(start, none);
+                margin-right: 5px;
+                img{
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    max-width: 50px;
+                }
+            }
+        }
+        .item2{
+            h1{
+                font-size: 18px;
+                font-weight: 500; 
+            }
+        }
+        .navbar-toggler{
+            display: flex;
+            background: $gradiente;
+            .navbar-toggler-icon{
+                @include items-content(center, center);
+                max-width: 15px;
+                max-height: 15px;
+            }
+        }
+        
+        .item3{
+            display: flex;
+            flex-direction: column;
+            width: $full-width;
+            a,
+            .busqueda,
+            .busqueda2{
+                font-size: 14px;
+                font-weight: 300;
+            }
+            li{
+                padding: 5px;
+            }
+            form{
+                margin-right: 0;
+            }
+        }
+    }
+    #main{
+        width: $full-width;
+        height: $full-height;
+        .titulos_portada{
+            font-size: 12px;
+        }
+        .container-fluid{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .filas{
+            flex-direction: column;
+            @include items-content(center, center);
+        }
+        .subtitulo{
+            margin: 10px 0 0 0;
+            @include items-content(center, center);
+            h2{
+                font-size: 17px;
+                padding: 5px 0 0 5px;
+                margin-bottom: 0;
+            }
+            p{
+                @extend .titulos_portada;
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+        .subtitulo2{
+            margin: 15px 0 10px 0;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            h2{
+                font-size: 15px;
+                padding: 10px;
+            }
+        }
+        .carrusel{
+            margin: 10px 0 0 0;
+        }
+        .portada2,
+        .portada3,
+        .portada4{
+            margin: 10px 0 10px 0;
+            flex-direction: column;
+            @include items-content(center, center);
+            img{
+                height: 170px;
+                padding: 5px;
+            }
+            p{
+                @extend .titulos_portada;
+                margin: 5px;
+                font-size: 12px;              
+            }
+            .caja1{
+                order: 3;
+            }
+            .caja2{
+                order: 2;
+            }
+            .caja3{
+                order: 1;
+            }
+            .caja4{
+                order: 2;
+            }
+            .caja5{
+                order: 1;
+            }
+        }
+        .libros{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 160px;
+            height: 225px;
+            margin: 15px;
+            padding: 5px;
+            img{
+                height: 96px;
+            }
+            h3{
+                height: 30px;
+                padding: 5px;
+                font-size: 12px;
+                margin: 0;
+            }
+            h4,
+            h5{
+                margin: 0;
+                font-size: 10px;
+                padding: 5px;
+            }
+            button{
+                height: 24px;
+                padding: 5px;
+                font-size: 10px;
+                margin: 0;
+            }
+        }
+        .formulario{
+            width: 250px;
+            margin: 12px 0 12px 0; 
+            display: flex;
+            flex-direction: column;
+            @include items-content(center, center);
+            .label{
+                font-size: 10px;
+                padding: 5px;
+                h2{
+                    font-size: 14px;
+                    margin: 5px 0 0 0;
+                }
+            }
+            button{
+                height: 15px;
+                padding: 5px;
+                font-size: 9px;
+                border-style: hidden;
+                border: none;
+                border-radius: 3px;
+            }
+            button:hover{
+                transform: translate(3px, 3px);
+                box-shadow: 0 0 0 1px rgb(184, 156, 98);
+                cursor: pointer;
+            }
+        }
+        .map-responsive{
+            margin-bottom: 10px;
+            iframe{
+                height:250px;
+                width:250px;
+            } 
+        }
+    }   
+    #footer{
+        width: $full-width;
+        height: $full-height;
+        .container{
+            margin-top: 5px;
+        }
+        .pagos{
+            img{
+                width: 22px;
+                padding: 0;
+            }
+            p{
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+        }
+        .contacto{
+            font-size: 13px;
+            .contactenos{
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            img{
+                width: 30px;
+            }
+            .numero{
+                margin: 5px 0 0 0;
+            }
+        }
+        nav{
+            a{
+                margin: 0;
+                img{
+                    max-height: 25px;
+                }
+            }
+        }
+    }
+}

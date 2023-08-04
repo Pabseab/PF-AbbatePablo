@@ -1,16 +1,19 @@
 /*Pie de pagina*/
 #footer{
     background-color: $fondo-primario;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: "Amanda";
     width: $full-width;
-    height: 162px;
+    height: $full-height;
     grid-area: footer;
     .pagos{
+        font-size: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include items-content(center, center);
+        text-align: center;
+        margin-top: 5px;
         p{
-            margin-top: 16px;
             color: $color;
         }
         img{
@@ -18,21 +21,25 @@
         }
     }
     .contacto{
+        font-size: 20px;
+        color: $color;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        p{
-            margin-top: 16px;
-            color: $color;
+        @include items-content(center, center);
+        .contactenos{
+            margin-top: 1rem;
+        }
+        .numero{
+            font-family: Roboto;
+            margin-top: 20px;
         }
     }
     nav{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        @include items-content(center, center);
         a{
+            @include items-content(center, center);
             padding: 10px;
             margin-top: 50px;
             margin-bottom: 50px;

@@ -1,106 +1,114 @@
 /*Contenido principal*/
 #main{
-    background-color: white;
+    background-color: $fondo-secundario;
     background-position: center;
     grid-area: main;
-    @mixin items-content($ejeX,$ejeY){
-        justify-content: $ejeX;
-        align-items: $ejeY;
+    font-family: "Roboto";
+    .titulos_portada{
+        font-size: 25px;
     }
     .container-fluid{
-        margin-top: 50px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
-    .carousel-item{
+    .container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .row{
         @include items-content(center, center);
     }
-    .titulos_portada{
-        font-size: 30px;
+    .filas{
+        justify-content: space-evenly;
+    }   
+    .subtitulo{
+        background: $gradiente;
+        margin: 30px 0 30px 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        height: $full-width;
+        border-radius: 8px;
+        h2{
+            font-size: 40px;
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+            @extend .titulos_portada;
+            text-align: center;
+        }
     }
-    p{
-        font-size: 50px;
-        text-align: center;
+    .subtitulo2{
+        display: flex;
+        @include items-content(center, center);
+        background: $gradiente;
+        margin: 30px 0 30px 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        height: $full-width;
+        border-radius: 8px;
+        h2{
+            font-size: 40px;
+            padding: 10px;
+        }
     }
-    .portada2{
-        padding-left: 150px;
-        padding-right: 150px;
-        margin-top: 25px;
-        margin-bottom: 25px;
+    .carrusel{
+        margin-top: 30px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .portada2,
+    .portada3,
+    .portada4{
+        background: $gradiente;
+        margin: 30px 0 30px 0;
         display: flex;
         flex-direction: row;
-        @include items-content(end, end);
+        @include items-content(space-between, center);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 8px;
         img{
             height: 400px;
+            padding: 15px;
         }
         p{
             @extend .titulos_portada;
-        }
-    }
-    .portada3{
-        padding-left: 150px;
-        padding-right: 150px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        display: flex;
-        flex-direction: row;
-        img{
-            height: 400px;
-            @include items-content(center, center);
-        }
-        p{
-            @extend .titulos_portada;
+            padding: 10px;
+            margin-left: 10px;
+            text-indent: 20px;
+            a{
+                font-family: Amanda;
+                text-decoration: none;
+                color: $color;
+            }
         }
     }
     .libros{
-        background: linear-gradient(to right, rgb(236, 236, 164),rgb(236, 236, 202));
+        background: $gradiente;
         width: 250px;
-        height: 375px;
+        height: 400px;
         margin: 30px;
         padding: 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        @include items-content(space-evenly, center);
         text-align: center;
         border-style: hidden;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         img{
             height: 160px;
+            margin-bottom: 5px;
         }
         h3{
+            margin-top: 4px;
             height: 40px;
-            padding: 10px;
+            margin-bottom: 0;
             font-size: 20px;
         }
-        p,
-        h4,
-        button{
-            height: 40px;
-            padding: 10px;
+        h4{
             font-size: 15px;
-            border-style: hidden;
-            border: none;
-            border-radius: 10px;
-            transition: width 5s;
+            margin-top: 15px;
         }
-        button:hover{
-        transform: translate(3px, 3px);
-        box-shadow: 0 0 0 1px rgb(184, 156, 98);
-        cursor: pointer;
-        }
-    }
-    .formulario{
-        background-image: url(../img/fondo\ contacto.jpg);
-        margin-top: 30px;
-        margin-bottom: 30px;
-        height: 1200px;
-        width: 900px;
-        display: flex;
-        flex-direction: column;
-        @include items-content(center, center);
-        section{
-            margin-top: 20px;
-        }
-        .label{
-            margin: 10px;
+        h5{
+            padding-bottom: 10px;
+            margin-top: 10px;
         }
         button{
             height: 40px;
@@ -109,15 +117,53 @@
             border-style: hidden;
             border: none;
             border-radius: 10px;
-            transition: width 5s;
-        }
+        }    
         button:hover{
             transform: translate(3px, 3px);
             box-shadow: 0 0 0 1px rgb(184, 156, 98);
             cursor: pointer;
+            }  
+    }
+    .formulario{
+        width: 450px;
+        background: $gradiente;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        font-size: 20px;
+        font-family: "Roboto";
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        @include items-content(center, center);
+        border-radius: 8px;
+        .label{
+            padding: 15px;
+            h2{
+                font-size: 30px;
+            }
+        }
+        button{
+            height: 40px;
+            padding: 10px;
+            font-size: 15px;
+            border-style: hidden;
+            border: none;
+            border-radius: 10px;
+        }
+        button:hover{
+            font-family: "Roboto";
+            transform: translate(3px, 3px);
+            box-shadow: 0 0 0 1px rgb(184, 156, 98);
+            cursor: pointer;
+        }
+    }
+    .map-responsive{
+            display: flex;
+            flex-direction: row;
+            @include items-content(center, center);
+            iframe{
+                height: 600px;
+                width: 600px;
             }
     }
-    .row{
-        @include items-content(center, center);
-    }   
 }

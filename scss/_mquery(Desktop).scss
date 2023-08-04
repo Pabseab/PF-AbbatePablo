@@ -1,0 +1,187 @@
+/*media queries*/
+
+@media (min-width:1024px) and (max-width:1480px){
+    body{
+        width: $full-width;
+        height: $full-height;
+    }
+    #header{
+        width: $full-width;
+        .encabezado{
+            margin: 0 10px 0 10px;
+        }
+        .item1{
+            .navbar-brand{
+                margin-left: 5px;
+                margin-right: 0;
+            }
+        }
+        .item2{
+            h1{
+                font-size: 30px;
+                font-weight: 500;
+                margin-left: 20px; 
+            }
+        }
+        .navbar-toggler{
+            display: none;
+        }
+        
+        .item3{
+            a,
+            .busqueda,
+            .busqueda2{
+                font-size: 16px;
+                font-weight: 300;
+            }
+            ul{
+                margin-right: 0;
+                li{
+                    padding: 5px;
+                }
+            }
+            
+            form{
+                margin-right: 15px;
+            }
+        }
+    }
+    #main{
+        width: $full-width;
+        height: $full-height;
+        .container-fluid{
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .subtitulo{
+            margin: 20px 0 20px 0;
+            @include items-content(center, center);
+            h2{
+                font-size: 25px;
+                padding: 5px 0 0 5px;
+                margin-bottom: 0;
+            }
+            p{
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+        .subtitulo2{
+            margin: 30px 0 25px 0;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            h2{
+                font-size: 28px;
+                padding: 10px;
+            }
+        }
+        .carrusel{
+            margin-top: 20px;
+        }
+        .portada2,
+        .portada3,
+        .portada4{
+            margin: 25px 0 25px 0;
+            @include items-content(center, center);
+            img{
+                height: 280px;
+                padding: 10px;
+            }
+            p{
+                margin: 10px;
+                font-size: 20px;              
+            }
+        }
+        .libros{
+            width: 200px;
+            height: 310px;
+            margin: 15px;
+            padding: 5px;
+            img{
+                height: 120px;
+            }
+            h3{
+                height: 40px;
+                padding: 5px;
+                font-size: 16px;
+            }
+            h4,
+            h5{
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-size: 13px;
+            }
+            button{
+                height: 30px;
+                padding: 5px;
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+        .formulario{
+            width: 300px;
+            margin: 30px 0px 10px 0px;
+            display: flex;
+            flex-direction: column;
+            @include items-content(center, center);
+            .label{
+                font-size: 13px;
+                padding: 5px;
+                h2{
+                    font-size: 20px;
+                }
+            }
+            button{
+                height: 25px;
+                padding: 5px;
+                font-size: 13px;
+                border-style: hidden;
+                border: none;
+                border-radius: 3px;
+            }
+        }
+        .map-responsive{
+            iframe{
+                height:400px;
+                width:400px;
+            } 
+        }
+    }    
+    #footer{
+        width: $full-width;
+        height: $full-height;
+        .container{
+            margin-top: 5px;
+        }
+        .pagos{
+            img{
+                width: 25px;
+                padding: 0;
+            }
+            p{
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+        }
+        .contacto{
+            font-size: 16px;
+            .contactenos{
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            img{
+                width: 35px;
+            }
+            .numero{
+                margin: 5px 0 0 0;
+            }
+        }
+        nav{
+            a{
+                margin: 0;
+                img{
+                    max-height: 25px;
+                }
+            }
+        }
+    }
+}

@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Tienda de Libros">
-    <title>Document</title>
+    <meta name="description" content="Tienda dediacada a la comercialización de libros. Aqui podras encontrar una gran variedad de titulos y tambien para los mas chicos">
+    <meta name="keywords" content="libros, venta, páginas, venta online, el pony pisador, catalogo">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!--Enlace estilo-->
     <link rel="stylesheet" href="css/estilos.css">
     <!--Enlace icono-->
@@ -22,68 +20,76 @@
 <body>
     <!--Cabecera-->
     <header id="header">
-        <!--Titulo-->
         <div class="fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <h1>El Pony Pisador</h1>
-                        <h2>Venta de Libros</h2>
+            <nav class="navbar navbar-expand-lg navbar-light encabezado">
+                <div class="container-fluid">
+                    <div class="col-2 col-lg-1 col-xxl-2 item1">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./img/El pony pisador 2.png" alt="Logo El pony pisador">
+                        </a>
                     </div>
-                    <!--Navegacion-->  
-                    <nav class="col-12 col-lg-6">
-                    <!--Lista-->    
-                        <a href="./index.html">Principal</a>
-                        <a href="./pages/catalogo.html">Catálogo</a>
-                        <a href="./pages/infantil.html">Infantil</a>
-                        <a href="./pages/novedades.html">Novedades</a>
-                        <a href="./pages/contacto.html">Contacto</a>
-                    </nav>
+                    <div class="col-7 col-lg-4 col-xxl-4 item2">
+                        <!--Título-->
+                        <h1>El Pony Pisador</h1>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="col-3 col-lg-7 col-xxl-6 item3">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!--Navegacion-->
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./pages/novedades.html">Destacados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Comprar</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalogo</a>
+                                    <!--Navegacion-->
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./pages/catalogo.html">Seccion General</a></li>
+                                        <li><a class="dropdown-item" href="./pages/infantil.html">Seccion Infantil</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2 busqueda" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success busqueda2" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </div>
-    </header> -->
+    </header>
     <!-- Contenido principal -->
     <main id="main">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <div>
-                        <p>Entrevistas en vivo en nuestro salón</p>
+                <div class="col-12 col-lg-10">
+                    <div class="subtitulo">
+                        <h2>Sobre Nosotros</h2>
+                        <p style="line-height: 150%">Somos una empresa dedicada a la venta de libros. Nos especializamos en realizar un servicio profesional y personalizado desde el primer momento. Asimismo brindamos asesoramiento integral para la adquisición de libros.</p>
                     </div>
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="./img/Foto 1-1.jpg" class="d-block w-100" alt="Desenmascarando la mentira keynesiana">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="./img/Foto 1-2.jpg" class="d-block w-100" alt="Nestor: El hombre que cambió todo">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="./img/Foto 1-3.jpg" class="d-block w-100" alt="Otra Educación: con cine, literatura y canciones">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
                     <div class="portada2">
-                        <p>Encuentra lo que estas buscando... Contamos con la mas completa variedad de títulos</p>
-                        <img src="./img/obama.jpg" alt="Libro Obama">
+                        <p style="line-height: 150%">Envios a todo el país. Nuestra libreria cuenta con un servicio de envio de libros puerta a puerta a cualquier lugar del país. <a href="./pages/contacto.html">Contacto.</a></p>
+                        <img src="./img/Index/J._R._R._Tolkien,_ca._1925.jpg" alt="J.R.R. Tolkien">
+                        <P style="line-height: 150%;">J.R.R. Tolkien</P>
                     </div>
                     <div class="portada3">
-                        <img src="./img/stephen king 1.jpg" alt="Stephen king">
-                        <p>Novelas...Libros Infantiles....Periodísticos...Literatura....Fantasía</p>
+                        <p class="caja1" style="line-height: 150%;">Stephen King</p>
+                        <img class="caja2" src="./img/Index/Stephen King.jpg" alt="Stephen king">
+                        <p class="caja3" style="line-height: 150%">Si buscas Novelas.. Cuentos.. Poesías.. Textos periodísticos... de autores clasicos y contemporáneos, ingresa en nuestro catalogo sección <a href="./pages/catalogo.html">General.</a></p>
+                    </div>
+                    <div class="portada4">
+                        <p style="line-height: 150%">Si buscas Cuentos.. Poesias.. Libros Álbum.. Historietas... ingresa en nuestro catálogo sección <a href="./pages/infantil.html">Infantil.</a></p>
+                        <img src="./img/Index/Liliana-Bodoc.jpg" alt="Liliana Bodoc">
+                        <p style="line-height: 150%;">Liliana Bodoc</p>
                     </div>
                 </div>
             </div>
@@ -93,21 +99,23 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
+                <!--Bloque Pagos-->
                 <div class="col-12 col-lg-4 pagos">
                     <p>Medios de Pago</p>
                     <img src="./img/icons8-visa-30.png" alt="Tarjeta de credito">
                     <img src="./img/icons8-cuenta-bancaria-30.png" alt="cuenta bancaria">
                 </div>
+                <!--Bloque Contacto-->
                 <div class="col-12 col-lg-4 contacto">
-                    <p>Contactenos</p>
+                    <p class="contactenos">Contáctenos</p>
                     <img src="./img/icons8-whatsapp-50.png" alt="whatsapp">
-                    <p>72619857214</p>
+                    <p class="numero">72619857214</p>
                 </div>
-                <!--Navegación-->
+                <!--Bloque Contacto-->
                 <nav class="col-12 col-lg-4">
-                    <a class="twitter" href="https://www.twitter.com" target="_blank"><img src="./img/i-twitter.png" alt=""></a>
-                    <a class="facebook" href="https://www.facebook.com" target="_blank"><img src="./img/i-facebook.png" alt=""></a>
-                    <a class="instagram" href="https://www.instagram.com" target="_blank"><img src="./img/i-instagram.png" alt=""></a>
+                    <a class="twitter" href="https://www.twitter.com" target="_blank"><img src="./img/i-twitter.png" alt="twitter"></a>
+                    <a class="facebook" href="https://www.facebook.com" target="_blank"><img src="./img/i-facebook.png" alt="facebook"></a>
+                    <a class="instagram" href="https://www.instagram.com" target="_blank"><img src="./img/i-instagram.png" alt="instagram"></a>
                 </nav>
             </div>
         </div>      

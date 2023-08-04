@@ -5,8 +5,30 @@ $mainfooter: otoño;
 @if $mainfooter == otoño{
     #header{
         background-color: $fondo-primario;
+        .container-fluid{
+            background-color: $fondo-primario;
+        }
         .fixed-top{
             background-color: $fondo-primario;
+        }
+        .item1{
+            .navbar-brand{
+                background-color: $fondo-primario;
+            }
+        }
+        .navbar-toggler{
+            background: $gradiente;
+        }
+    }
+    #main{
+        .libros,
+        .subtitulo,
+        .subtitulo2,
+        .portada2,
+        .portada3,
+        .portada4,
+        .formulario{
+            background: $gradiente;
         }
     }
     #footer{
@@ -16,9 +38,31 @@ $mainfooter: otoño;
 @else if $mainfooter == verano{
     #header{
         background-color: aquamarine;
+        .container-fluid{
+            background-color: aquamarine;
+        }
         .fixed-top{
             background-color: aquamarine;
         }
+        .item1{
+            .navbar-brand{
+                background-color: aquamarine;
+            }
+        }
+        .navbar-toggler{
+            background: aquamarine;
+        }
+    }
+    #main{
+        .libros,
+        .subtitulo,
+        .subtitulo2,
+        .portada2,
+        .portada3,
+        .portada4,
+        .formulario{
+            background: aquamarine;
+        } 
     }
     #footer{
         background-color: aquamarine;

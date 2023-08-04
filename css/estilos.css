@@ -1,4 +1,4 @@
-/*Variables*/ /*generales*/
+/*generales*/
 * {
   padding: 0;
   margin: 0;
@@ -12,51 +12,57 @@ body {
 
 /*Fuente*/
 @font-face {
-  font-family: "SilkyQueen";
-  src: url(/fonts/SilkyQueen.otf);
+  font-family: "Amanda";
+  src: url(/fonts/ananda_2/Ananda\ Personal\ Use.ttf);
 }
-/* Cabecera */
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/roboto/Roboto-BoldItalic.ttf);
+}
+/*Variables*/ /* Cabecera */
 #header {
+  width: 100%;
+  height: 130px;
   background-color: beige;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   color: rgba(78, 35, 35, 0.685);
   grid-area: header;
-  font-family: "SilkyQueen";
-  width: 100%;
-  height: 150px;
+  font-family: "Amanda";
 }
-#header .fixed-top {
+#header .container-fluid {
   background-color: beige;
-  height: 150px;
+  color: rgba(78, 35, 35, 0.685);
 }
-#header .container {
-  margin-top: 20px;
-}
-#header header h1 {
-  font-size: 50px;
-  font-weight: 500;
-  text-align: left;
-  margin: 15px;
-}
-#header header h2 {
-  font-size: 30px;
-  font-weight: 200;
-  text-align: left;
-  margin: 15px;
-}
-#header nav {
+#header .item1 .navbar-brand {
   display: flex;
   justify-content: center;
+  align-items: none;
+  background-color: beige;
+}
+#header .item1 .navbar-brand img {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+#header .item2 {
+  display: flex;
+  justify-content: none;
   align-items: center;
 }
-#header a {
-  color: rgba(78, 35, 35, 0.685);
-  font-family: "SilkyQueen";
-  text-decoration: none;
-  padding: 20px;
-  font-size: 20px;
+#header .item2 h1 {
+  margin: 0px;
+  font-size: 50px;
+  font-weight: 500;
 }
-#header a:hover {
-  transform: scale(1.2);
+#header .item3 li {
+  padding: 15px;
+}
+#header .item3 a,
+#header .item3 .busqueda .busqueda2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+#header .item3 form {
+  margin-right: 80px;
 }
 
 /*Contenido principal*/
@@ -64,55 +70,102 @@ body {
   background-color: white;
   background-position: center;
   grid-area: main;
+  font-family: "Roboto";
+}
+#main .titulos_portada, #main .portada2 p,
+#main .portada3 p,
+#main .portada4 p, #main .subtitulo p {
+  font-size: 25px;
 }
 #main .container-fluid {
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-#main .carousel-item {
+#main .container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#main .row {
   justify-content: center;
   align-items: center;
 }
-#main .titulos_portada, #main .portada3 p, #main .portada2 p {
-  font-size: 30px;
+#main .filas {
+  justify-content: space-evenly;
 }
-#main p {
-  font-size: 50px;
+#main .subtitulo {
+  background: linear-gradient(to right, rgb(235, 235, 198), rgb(235, 235, 215));
+  margin: 30px 0 30px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 100%;
+  border-radius: 8px;
+}
+#main .subtitulo h2 {
+  font-size: 40px;
+  padding: 10px;
+}
+#main .subtitulo p {
+  padding: 10px;
   text-align: center;
 }
-#main .portada2 {
-  padding-left: 150px;
-  padding-right: 150px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+#main .subtitulo2 {
   display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: end;
-}
-#main .portada2 img {
-  height: 400px;
-}
-#main .portada3 {
-  padding-left: 150px;
-  padding-right: 150px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: row;
-}
-#main .portada3 img {
-  height: 400px;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to right, rgb(235, 235, 198), rgb(235, 235, 215));
+  margin: 30px 0 30px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 100%;
+  border-radius: 8px;
+}
+#main .subtitulo2 h2 {
+  font-size: 40px;
+  padding: 10px;
+}
+#main .carrusel {
+  margin-top: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#main .portada2,
+#main .portada3,
+#main .portada4 {
+  background: linear-gradient(to right, rgb(235, 235, 198), rgb(235, 235, 215));
+  margin: 30px 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+}
+#main .portada2 img,
+#main .portada3 img,
+#main .portada4 img {
+  height: 400px;
+  padding: 15px;
+}
+#main .portada2 p,
+#main .portada3 p,
+#main .portada4 p {
+  padding: 10px;
+  margin-left: 10px;
+  text-indent: 20px;
+}
+#main .portada2 p a,
+#main .portada3 p a,
+#main .portada4 p a {
+  font-family: Amanda;
+  text-decoration: none;
+  color: rgba(78, 35, 35, 0.685);
 }
 #main .libros {
-  background: linear-gradient(to right, rgb(236, 236, 164), rgb(236, 236, 202));
+  background: linear-gradient(to right, rgb(235, 235, 198), rgb(235, 235, 215));
   width: 250px;
-  height: 375px;
+  height: 400px;
   margin: 30px;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   border-style: hidden;
@@ -120,14 +173,22 @@ body {
 }
 #main .libros img {
   height: 160px;
+  margin-bottom: 5px;
 }
 #main .libros h3 {
+  margin-top: 4px;
   height: 40px;
-  padding: 10px;
+  margin-bottom: 0;
   font-size: 20px;
 }
-#main .libros p,
-#main .libros h4,
+#main .libros h4 {
+  font-size: 15px;
+  margin-top: 15px;
+}
+#main .libros h5 {
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
 #main .libros button {
   height: 40px;
   padding: 10px;
@@ -135,7 +196,6 @@ body {
   border-style: hidden;
   border: none;
   border-radius: 10px;
-  transition: width 5s;
 }
 #main .libros button:hover {
   transform: translate(3px, 3px);
@@ -143,21 +203,24 @@ body {
   cursor: pointer;
 }
 #main .formulario {
-  background-image: url(../img/fondo\ contacto.jpg);
+  width: 450px;
+  background: linear-gradient(to right, rgb(235, 235, 198), rgb(235, 235, 215));
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 20px;
+  font-family: "Roboto";
   margin-top: 30px;
   margin-bottom: 30px;
-  height: 1200px;
-  width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#main .formulario section {
-  margin-top: 20px;
+  border-radius: 8px;
 }
 #main .formulario .label {
-  margin: 10px;
+  padding: 15px;
+}
+#main .formulario .label h2 {
+  font-size: 30px;
 }
 #main .formulario button {
   height: 40px;
@@ -166,55 +229,72 @@ body {
   border-style: hidden;
   border: none;
   border-radius: 10px;
-  transition: width 5s;
 }
 #main .formulario button:hover {
+  font-family: "Roboto";
   transform: translate(3px, 3px);
   box-shadow: 0 0 0 1px rgb(184, 156, 98);
   cursor: pointer;
 }
-#main .row {
+#main .map-responsive {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+#main .map-responsive iframe {
+  height: 600px;
+  width: 600px;
 }
 
 /*Pie de pagina*/
 #footer {
   background-color: beige;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: "Amanda";
   width: 100%;
-  height: 162px;
+  height: 100%;
   grid-area: footer;
 }
 #footer .pagos {
+  font-size: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
 }
 #footer .pagos p {
-  margin-top: 16px;
   color: rgba(78, 35, 35, 0.685);
 }
 #footer .pagos img {
   padding: 5px;
 }
 #footer .contacto {
+  font-size: 20px;
+  color: rgba(78, 35, 35, 0.685);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-#footer .contacto p {
-  margin-top: 16px;
-  color: rgba(78, 35, 35, 0.685);
+#footer .contacto .contactenos {
+  margin-top: 1rem;
+}
+#footer .contacto .numero {
+  font-family: Roboto;
+  margin-top: 20px;
 }
 #footer nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 #footer nav a {
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -222,154 +302,31 @@ body {
   margin-right: 20px;
 }
 
-/*media queries*/
-@media (max-width: 420px) {
-  body {
-    width: 100vh;
-  }
-  #header {
-    width: 100vh;
-    height: 180px;
-  }
-  #header .fixed-top {
-    width: 100vh;
-    height: 180px;
-  }
-  #header .container {
-    height: 180px;
-    text-align: center;
-  }
-  #header h1 {
-    font-size: 30px;
-    font-weight: 500;
-    margin: 15px;
-  }
-  #header h2 {
-    font-size: 18px;
-    font-weight: 200;
-    margin: 15px;
-  }
-  #header a {
-    font-size: 10px;
-  }
-  #main {
-    width: 100vh;
-  }
-  #main .container-fluid {
-    margin-top: 20px;
-  }
-  #main p {
-    font-size: 15px;
-  }
-  #main .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #main .portada2 img,
-  #main .portada3 img {
-    height: 200px;
-  }
-  #main .portada2 p,
-  #main .portada3 p {
-    font-size: 12px;
-  }
-  #main .libros {
-    width: 150px;
-    height: 225px;
-    margin: 15px;
-    padding: 5px;
-  }
-  #main .libros img {
-    height: 96px;
-  }
-  #main .libros h3 {
-    height: 24px;
-    padding: 5px;
-    font-size: 12px;
-  }
-  #main .libros p,
-  #main .libros h4,
-  #main .libros button {
-    height: 24px;
-    padding: 5px;
-    font-size: 7px;
-  }
-  #main .formulario {
-    background-image: url(../img/fondo\ contacto\ 2.jpg);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 560px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #main .formulario section {
-    width: 200px;
-    margin-top: 20px;
-  }
-  #main .formulario .label {
-    margin: 10px;
-  }
-  #main .formulario button {
-    height: 15px;
-    padding: 5px;
-    font-size: 9px;
-    border-style: hidden;
-    border: none;
-    border-radius: 3px;
-    transition: width 5s;
-  }
-  #main .formulario button:hover {
-    transform: translate(3px, 3px);
-    box-shadow: 0 0 0 1px rgb(184, 156, 98);
-    cursor: pointer;
-  }
-  #main .formulario .map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-  }
-  #main .formulario .map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-  #footer {
-    width: 100vh;
-    height: 300px;
-  }
-  #footer .container {
-    height: 300px;
-  }
-  #footer .pagos img {
-    width: 30px;
-  }
-  #footer .pagos p {
-    font-size: 10px;
-  }
-  #footer .contacto img {
-    width: 30px;
-  }
-  #footer .contacto p {
-    font-size: 10px;
-  }
-  #footer nav a {
-    width: 30px;
-    margin: 10px;
-  }
-}
 /*condicionales*/
 #header {
   background-color: beige;
 }
+#header .container-fluid {
+  background-color: beige;
+}
 #header .fixed-top {
   background-color: beige;
+}
+#header .item1 .navbar-brand {
+  background-color: beige;
+}
+#header .navbar-toggler {
+  background: linear-gradient(to right, rgb(235, 235, 198), rgb(235, 235, 215));
+}
+
+#main .libros,
+#main .subtitulo,
+#main .subtitulo2,
+#main .portada2,
+#main .portada3,
+#main .portada4,
+#main .formulario {
+  background: linear-gradient(to right, rgb(235, 235, 198), rgb(235, 235, 215));
 }
 
 #footer {
@@ -387,6 +344,429 @@ body {
 
 .linea3:hover {
   background-color: rgb(236, 236, 170);
+}
+
+/*media queries*/
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  #header {
+    width: 100%;
+    height: 90px;
+  }
+  #header .encabezado {
+    margin: 0 10px 0 10px;
+  }
+  #header .item1 .navbar-brand {
+    display: flex;
+    justify-content: start;
+    align-items: none;
+    margin-right: 5px;
+  }
+  #header .item1 .navbar-brand img {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-width: 50px;
+  }
+  #header .item2 h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #header .navbar-toggler {
+    display: flex;
+    background: linear-gradient(to right, rgb(235, 235, 198), rgb(235, 235, 215));
+  }
+  #header .navbar-toggler .navbar-toggler-icon {
+    justify-content: center;
+    align-items: center;
+    max-width: 15px;
+    max-height: 15px;
+  }
+  #header .item3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #header .item3 a,
+  #header .item3 .busqueda,
+  #header .item3 .busqueda2 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #header .item3 li {
+    padding: 5px;
+  }
+  #header .item3 form {
+    margin-right: 0;
+  }
+  #main {
+    width: 100%;
+    height: 100%;
+  }
+  #main .titulos_portada, #main .subtitulo p, #main .portada2 p,
+  #main .portada3 p,
+  #main .portada4 p {
+    font-size: 12px;
+  }
+  #main .container-fluid {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #main .filas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .subtitulo {
+    margin: 10px 0 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .subtitulo h2 {
+    font-size: 17px;
+    padding: 5px 0 0 5px;
+    margin-bottom: 0;
+  }
+  #main .subtitulo p {
+    padding: 10px;
+    font-size: 12px;
+  }
+  #main .subtitulo2 {
+    margin: 15px 0 10px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #main .subtitulo2 h2 {
+    font-size: 15px;
+    padding: 10px;
+  }
+  #main .carrusel {
+    margin: 10px 0 0 0;
+  }
+  #main .portada2,
+  #main .portada3,
+  #main .portada4 {
+    margin: 10px 0 10px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .portada2 img,
+  #main .portada3 img,
+  #main .portada4 img {
+    height: 170px;
+    padding: 5px;
+  }
+  #main .portada2 p,
+  #main .portada3 p,
+  #main .portada4 p {
+    margin: 5px;
+    font-size: 12px;
+  }
+  #main .portada2 .caja1,
+  #main .portada3 .caja1,
+  #main .portada4 .caja1 {
+    order: 3;
+  }
+  #main .portada2 .caja2,
+  #main .portada3 .caja2,
+  #main .portada4 .caja2 {
+    order: 2;
+  }
+  #main .portada2 .caja3,
+  #main .portada3 .caja3,
+  #main .portada4 .caja3 {
+    order: 1;
+  }
+  #main .portada2 .caja4,
+  #main .portada3 .caja4,
+  #main .portada4 .caja4 {
+    order: 2;
+  }
+  #main .portada2 .caja5,
+  #main .portada3 .caja5,
+  #main .portada4 .caja5 {
+    order: 1;
+  }
+  #main .libros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+    height: 225px;
+    margin: 15px;
+    padding: 5px;
+  }
+  #main .libros img {
+    height: 96px;
+  }
+  #main .libros h3 {
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    margin: 0;
+  }
+  #main .libros h4,
+  #main .libros h5 {
+    margin: 0;
+    font-size: 10px;
+    padding: 5px;
+  }
+  #main .libros button {
+    height: 24px;
+    padding: 5px;
+    font-size: 10px;
+    margin: 0;
+  }
+  #main .formulario {
+    width: 250px;
+    margin: 12px 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .formulario .label {
+    font-size: 10px;
+    padding: 5px;
+  }
+  #main .formulario .label h2 {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+  }
+  #main .formulario button {
+    height: 15px;
+    padding: 5px;
+    font-size: 9px;
+    border-style: hidden;
+    border: none;
+    border-radius: 3px;
+  }
+  #main .formulario button:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 1px rgb(184, 156, 98);
+    cursor: pointer;
+  }
+  #main .map-responsive {
+    margin-bottom: 10px;
+  }
+  #main .map-responsive iframe {
+    height: 250px;
+    width: 250px;
+  }
+  #footer {
+    width: 100%;
+    height: 100%;
+  }
+  #footer .container {
+    margin-top: 5px;
+  }
+  #footer .pagos img {
+    width: 22px;
+    padding: 0;
+  }
+  #footer .pagos p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  #footer .contacto {
+    font-size: 13px;
+  }
+  #footer .contacto .contactenos {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  #footer .contacto img {
+    width: 30px;
+  }
+  #footer .contacto .numero {
+    margin: 5px 0 0 0;
+  }
+  #footer nav a {
+    margin: 0;
+  }
+  #footer nav a img {
+    max-height: 25px;
+  }
+}
+/*media queries*/
+@media (min-width: 1024px) and (max-width: 1480px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  #header {
+    width: 100%;
+  }
+  #header .encabezado {
+    margin: 0 10px 0 10px;
+  }
+  #header .item1 .navbar-brand {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+  #header .item2 h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  #header .navbar-toggler {
+    display: none;
+  }
+  #header .item3 a,
+  #header .item3 .busqueda,
+  #header .item3 .busqueda2 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  #header .item3 ul {
+    margin-right: 0;
+  }
+  #header .item3 ul li {
+    padding: 5px;
+  }
+  #header .item3 form {
+    margin-right: 15px;
+  }
+  #main {
+    width: 100%;
+    height: 100%;
+  }
+  #main .container-fluid {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  #main .subtitulo {
+    margin: 20px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .subtitulo h2 {
+    font-size: 25px;
+    padding: 5px 0 0 5px;
+    margin-bottom: 0;
+  }
+  #main .subtitulo p {
+    padding: 10px;
+    font-size: 20px;
+  }
+  #main .subtitulo2 {
+    margin: 30px 0 25px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #main .subtitulo2 h2 {
+    font-size: 28px;
+    padding: 10px;
+  }
+  #main .carrusel {
+    margin-top: 20px;
+  }
+  #main .portada2,
+  #main .portada3,
+  #main .portada4 {
+    margin: 25px 0 25px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .portada2 img,
+  #main .portada3 img,
+  #main .portada4 img {
+    height: 280px;
+    padding: 10px;
+  }
+  #main .portada2 p,
+  #main .portada3 p,
+  #main .portada4 p {
+    margin: 10px;
+    font-size: 20px;
+  }
+  #main .libros {
+    width: 200px;
+    height: 310px;
+    margin: 15px;
+    padding: 5px;
+  }
+  #main .libros img {
+    height: 120px;
+  }
+  #main .libros h3 {
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  #main .libros h4,
+  #main .libros h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  #main .libros button {
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    margin: 0;
+  }
+  #main .formulario {
+    width: 300px;
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .formulario .label {
+    font-size: 13px;
+    padding: 5px;
+  }
+  #main .formulario .label h2 {
+    font-size: 20px;
+  }
+  #main .formulario button {
+    height: 25px;
+    padding: 5px;
+    font-size: 13px;
+    border-style: hidden;
+    border: none;
+    border-radius: 3px;
+  }
+  #main .map-responsive iframe {
+    height: 400px;
+    width: 400px;
+  }
+  #footer {
+    width: 100%;
+    height: 100%;
+  }
+  #footer .container {
+    margin-top: 5px;
+  }
+  #footer .pagos img {
+    width: 25px;
+    padding: 0;
+  }
+  #footer .pagos p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  #footer .contacto {
+    font-size: 16px;
+  }
+  #footer .contacto .contactenos {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  #footer .contacto img {
+    width: 35px;
+  }
+  #footer .contacto .numero {
+    margin: 5px 0 0 0;
+  }
+  #footer nav a {
+    margin: 0;
+  }
+  #footer nav a img {
+    max-height: 25px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

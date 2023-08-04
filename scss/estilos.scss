@@ -1,9 +1,10 @@
-@import "variables";
 @import "generales";
+@import "variables";
 @import "header";
 @import "main";
 @import "footer";
-@import "mquery";
 @import "condicionales";
 @import "map";
+@import "mquery(Mobil)";
+@import "mquery(Desktop)";
 
