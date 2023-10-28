@@ -768,5 +768,188 @@ body {
     max-height: 25px;
   }
 }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.7411764706);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s 0.01s;
+  --transform: translateY(-100vh);
+  --transition: transform .3s;
+}
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.2s;
+  --transform: translateY(0);
+  --transition: transform .3s .3s;
+}
+
+.modal__container {
+  margin: 500;
+  margin: auto;
+  width: 70%;
+  max-height: 90%;
+  background-color: beige;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+  user-select: none;
+}
+.modal__container .carrito__titulo {
+  font-family: Amanda;
+  margin: 0px;
+  font-size: 50px;
+  font-weight: 500;
+}
+.modal__container .cerrar__carrito {
+  height: 40px;
+  padding: 10px;
+  font-size: 15px;
+  border-style: hidden;
+  border: none;
+  border-radius: 10px;
+}
+.modal__container .cerrar__carrito:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 1px rgb(184, 156, 98);
+  cursor: pointer;
+}
+.modal__container #carrito__contenedor {
+  gap: 1rem;
+  max-width: 60rem;
+  margin: 60px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+.modal__container #carrito__contenedor .productoEnCarrito {
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__container #carrito__contenedor .productoEnCarrito .imgCarrito,
+.modal__container #carrito__contenedor .productoEnCarrito .tituloCarrito,
+.modal__container #carrito__contenedor .productoEnCarrito .subtituloCarrito,
+.modal__container #carrito__contenedor .productoEnCarrito .precioCarrito,
+.modal__container #carrito__contenedor .productoEnCarrito .cantidadCarrito {
+  margin: 5px;
+  width: 160px;
+}
+.modal__container #carrito__contenedor .productoEnCarrito .eliminar {
+  background-image: url("../img/icons8-papelera-llena-30.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  font-size: 15px;
+  border-style: hidden;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+}
+.modal__container #carrito__contenedor .productoEnCarrito .eliminar:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 1px rgb(184, 156, 98);
+  cursor: pointer;
+}
+
+.card {
+  max-width: 30%;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.producto__contenedor {
+  display: none;
+}
+
+.filtro {
+  display: none;
+}
+
+.modalBusqueda {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.7411764706);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s 0.01s;
+  --transform: translateY(-100vh);
+  --transition: transform .3s;
+}
+
+.modalBusqueda--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.2s;
+  --transform: translateY(0);
+  --transition: transform .3s .3s;
+}
+
+.modalBusqueda__container {
+  margin: 500;
+  margin: auto;
+  width: 70%;
+  max-height: 90%;
+  background-color: beige;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+  user-select: none;
+  display: flex;
+}
+
+.busqueda__contenedor {
+  gap: 1rem;
+  max-width: 60rem;
+  margin: 60px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+}
+.busqueda__contenedor .elementoEnContenedor {
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.busqueda__contenedor .elementoEnContenedor .imgBusqueda,
+.busqueda__contenedor .elementoEnContenedor .tituloBusqueda,
+.busqueda__contenedor .elementoEnContenedor .subtituloBusqueda {
+  margin: 5px;
+  width: 160px;
+}
 
 /*# sourceMappingURL=estilos.css.map */

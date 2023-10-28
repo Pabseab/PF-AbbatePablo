@@ -1,0 +1,124 @@
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .10s .01s;
+    --transform: translateY(-100vh);
+    --transition: transform .3s; 
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .2s;
+    --transform: translateY(0);
+    --transition: transform .3s .3s;
+}  
+
+.modal__container {
+    margin: 500;
+    margin: auto;
+    width: 70%;
+    //max-width: 900px;
+    max-height: 90%;
+    background-color: $fondo-primario;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+    user-select: none;
+    .carrito__titulo {
+        font-family: Amanda;
+        margin: 0px;
+        font-size: 50px;
+        font-weight: 500; 
+    }
+    .cerrar__carrito {
+        height: 40px;
+        padding: 10px;
+        font-size: 15px;
+        border-style: hidden;
+        border: none;
+        border-radius: 10px;
+    }
+    .cerrar__carrito:hover{
+        transform: translate(3px, 3px);
+        box-shadow: 0 0 0 1px rgb(184, 156, 98);
+        cursor: pointer;
+        }  
+    #carrito__contenedor {
+        gap: 1rem;
+        max-width: 60rem;
+        margin: 60px auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: flex;
+        .productoEnCarrito {
+            background-color: $fondo-secundario;
+            border-radius: 10px;
+            margin: 5px 0;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .imgCarrito,
+            .tituloCarrito,
+            .subtituloCarrito,
+            .precioCarrito,
+            .cantidadCarrito{
+                margin: 5px;
+                width: 160px;
+            }
+            .eliminar{
+                background-image: url("../img/icons8-papelera-llena-30.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 20px;
+                height: 40px;
+                width: 40px;
+                padding: 10px;
+                font-size: 15px;
+                border-style: hidden;
+                border: none;
+                border-radius: 10px;
+                display: flex;
+            }    
+            .eliminar:hover{
+                transform: translate(3px, 3px);
+                box-shadow: 0 0 0 1px rgb(184, 156, 98);
+                cursor: pointer;
+                }  
+            
+            
+            // .eliminar {
+            //     background-color: white;
+            //     color: #ff6961;
+            //     border: none;
+            //     font-size: 20px;
+            // }
+        }
+    }
+    
+}
+
+.card {
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+
+.producto__contenedor {
+    display: none;
+}

@@ -41,7 +41,7 @@
                                     <a class="nav-link" aria-current="page" href="../pages/novedades.html">Destacados</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Comprar</a>
+                                    <a class="nav-link abrir__carrito" href="#">Carrito</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
@@ -55,8 +55,7 @@
                                 <a class="nav-link" aria-current="page" href="../pages/contacto.html">Contacto</a>
                                 </li>
                             </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2 busqueda" type="search" placeholder="Buscar" aria-label="Search">
+                            <form class="d-flex bus">
                                 <button class="btn btn-outline-success busqueda2" type="submit">Buscar</button>
                             </form>
                         </div>
@@ -74,21 +73,21 @@
                     <h3>El señor de los Anillos</h3>
                     <h4>El señor de los Anillos: El retorno del Rey</h4>
                     <h5>6350$</h5>
-                    <button class="linea1">Comprar</button>
+                    <button id="1" class="linea1 agregar">Agregar</button>
                 </div>
                 <div class="col-12 col-lg-4 d-flex justify-content-center libros">
                     <img class="50px" src="../img/Adultos/portada_el-nudo_carlos-pagni_202302241836.jpg" alt="El Nudo">
                     <h3>El Nudo</h3>
                     <h4>Carlos Pagni</h4>
                     <h5>4890$</h5>
-                    <button class="linea1">Comprar</button>
+                    <button id="2" class="linea1 agregar">Agregar</button>
                 </div>
                 <div class="col-12 col-lg-4 d-flex justify-content-center libros">
                     <img class="50px" src="../img/Adultos/El Silmarillon.jpg" alt="El Silmarillon">
                     <h3>El Silmarillon</h3>
                     <h4>El Silmarillon: JRR Tolkien</h4>
                     <h5>10200$</h5>
-                    <button class="linea1">Comprar</button>
+                    <button id="3" class="linea1 agregar">Agregar</button>
                 </div>
             </section>
             <section class="row filas">
@@ -97,47 +96,69 @@
                     <h3>Barack Obama</h3>
                     <h4>Barack Obama</h4>
                     <h5>7840$</h5>
-                    <button class="linea2">Comprar</button>
+                    <button id="4" class="linea2 agregar">Agregar</button>
                 </div>
                 <div class="col-12 col-lg-4 d-flex justify-content-center libros">
                     <img class="50px" src="../img/Adultos/Los hijos de Hurin.jpg" alt="Los Hijos de Hurin">
                     <h3>Los Hijos de Hurin</h3>
                     <h4>Los Hijos de Hurin: JRR Tolkien</h4>
                     <h5>4890$</h5>
-                    <button class="linea2">Comprar</button>
+                    <button id="5" class="linea2 agregar">Agregar</button>
                 </div>
                 <div class="col-12 col-lg-4 d-flex justify-content-center libros">
                     <img class="50px" src="../img/Adultos/stephen king 1.jpg" alt="Stephen king">
                     <h3>El Visitante</h3>
                     <h4>El Visitante: Stephen king</h4>
                     <h5>4890$</h5>
-                    <button class="linea2">Comprar</button>
+                    <button id="6" class="linea2 agregar">Agregar</button>
                 </div>
             </section>
             <section class="row filas">
                 <div class="col-12 col-lg-4 d-flex justify-content-center libros">
-                        <img class="50px" src="../img/Adultos/Sensatez y sentimiento.jpg" alt="Sensatez y sentimiento">
-                        <h3>Sensatez y Sentimiento</h3>
-                        <h4>Sensatez y Sentimineto</h4>
-                        <h5>6350$</h5>
-                        <button class="linea3">Comprar</button>
+                    <img class="50px" src="../img/Adultos/Sensatez y sentimiento.jpg" alt="Sensatez y sentimiento">
+                    <h3>Sensatez y Sentimiento</h3>
+                    <h4>Sensatez y Sentimineto</h4>
+                    <h5>6350$</h5>
+                    <button id="7" class="linea3 agregar">Agregar</button>
                 </div>
                 <div class="col-12 col-lg-4 d-flex justify-content-center libros">
                     <img class="50px" src="../img/Adultos/Cumbres barrascosas.jpg" alt="Cumbres Borrascosas">
                     <h3>Cumbres Borrascosas</h3>
                     <h4>Cumbres Borrascosas</h4>
                     <h5>5720$</h5>
-                    <button class="linea3">Comprar</button>
+                    <button id="8" class="linea3 agregar">Agregar</button>
                 </div>
                 <div class="col-12 col-lg-4 d-flex justify-content-center libros">
-                        <img class="50px" src="../img/Adultos/El Retrato de Dorian Gray.jpg" alt="El Retrato de Dorian Gray">
-                        <h3>El Retrato de Dorian Gray</h3>
-                        <h4>El Retrato de Dorian Gray</h4>
-                        <h5>12450$</h5>
-                        <button class="linea3">Comprar</button>
+                    <img class="50px" src="../img/Adultos/El Retrato de Dorian Gray.jpg" alt="El Retrato de Dorian Gray">
+                    <h3>El Retrato de Dorian Gray</h3>
+                    <h4>El Retrato de Dorian Gray</h4>
+                    <h5>12450$</h5>
+                    <button id="9" class="linea3 agregar">Agregar</button>
                 </div>
             </section>
         </div>
+        <section class="modal">
+            <div class="modal__container">
+                <p class="carrito__titulo">Carrito</p>
+                <p class="carrito__vacio">Carrito vacio</p>
+                <div id="carrito__contenedor">
+                    <img id="eliminar__producto" src="../img/icons8-papelera-llena-30.png">eliminar producto</img>
+                </div>
+                <p id="cantidad${producto.id}">Cantidad: <span id="contador-carrito">0</span></p>
+                <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+                <button class="cerrar__carrito">Seguir Comprando</button>
+            </div>
+        </section>
+        <section class="modalBusqueda">
+            <div class="modalBusqueda__container">
+                <div class="busqueda__contenedor">
+                </div>
+                <form class="d-flex bus">
+                    <input class="form-control me-2 busqueda" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
+                <button class="cerrarBusqueda">X</button>
+            </div>
+        </section>
     </main>
     <!--Pie de Pagina-->
     <footer id="footer">
@@ -162,5 +183,12 @@
             </div>
         </div>      
     </footer>
+    <script src="../data/catalogo1.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/buscador.js"></script>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
 </body>
 </html>

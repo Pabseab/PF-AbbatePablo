@@ -15,11 +15,11 @@ body{
 /*Fuente*/
 @font-face {
     font-family: "Amanda";
-    src: url(/fonts/ananda_2/Ananda\ Personal\ Use.ttf);
+    src: url(../fonts/ananda_2/Ananda\ Personal\ Use.ttf);
 }
 @font-face {
     font-family: "Roboto";
-    src: url(/fonts/roboto/Roboto-BoldItalic.ttf);
+    src: url(../fonts/roboto/Roboto-BoldItalic.ttf);
 }
 @mixin items-content($ejeX,$ejeY){
     justify-content: $ejeX;
