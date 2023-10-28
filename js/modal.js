@@ -24,20 +24,20 @@ modalCarrito.addEventListener("click", (e) => {
 
 //Modal Buscador
 
-const modalBusqueda = document.querySelector(".modalBusqueda");
-const openModalBusqueda = document.querySelector(".busqueda2");
-const closeModalBusqueda = document.querySelector(".cerrarBusqueda");
-//const modalCarrito = document.querySelector(".modal")
+// const modalBusqueda = document.querySelector(".modalBusqueda");
+// const openModalBusqueda = document.querySelector(".busqueda2");
+// const closeModalBusqueda = document.querySelector(".cerrarBusqueda");
+// //const modalCarrito = document.querySelector(".modal")
 
-openModalBusqueda.addEventListener("click", (e) => {
-	e.preventDefault()
-	modalBusqueda.classList.add("modalBusqueda--show");
-});
+// openModalBusqueda.addEventListener("click", (e) => {
+// 	e.preventDefault()
+// 	modalBusqueda.classList.add("modalBusqueda--show");
+// });
 
-closeModalBusqueda.addEventListener("click", (e) => {
-	e.preventDefault()
-	modalBusqueda.classList.remove("modalBusqueda--show");
-});
+// closeModalBusqueda.addEventListener("click", (e) => {
+// 	e.preventDefault()
+// 	modalBusqueda.classList.remove("modalBusqueda--show");
+// });
 
 //modalCarrito.addEventListener("click", (e) => {
 //	e.stopPropagation()

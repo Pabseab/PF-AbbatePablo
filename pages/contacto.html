@@ -45,7 +45,7 @@
                                     <a class="nav-link" aria-current="page" href="../pages/novedades.html">Destacados</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Carrito</a>
+                                    <a class="nav-link abrir__carrito" href="#">Carrito</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
@@ -110,6 +110,18 @@
                 </section>
             </div>
         </div>
+        <section class="modal">
+            <div class="modal__container">
+                <p class="carrito__titulo">Carrito</p>
+                <p class="carrito__vacio">Carrito vacio</p>
+                <div id="carrito__contenedor">
+                    <img id="eliminar__producto" src="../img/icons8-papelera-llena-30.png">eliminar producto</img>
+                </div>
+                <p id="cantidad${producto.id}">Cantidad: <span id="contador-carrito">0</span></p>
+                <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+                <button class="cerrar__carrito">Seguir Comprando</button>
+            </div>
+        </section>
     </main>
     <!--Pie de Página-->
     <footer id="footer">
@@ -136,5 +148,10 @@
             </div>
         </div>
     </footer>
+    <script src="../data/catalogo1.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <script src="../js/formulario.js"></script> 
 </html>

@@ -2,7 +2,7 @@
 const productos = 
 [
     {
-        imagen: "../img/Adultos/El señor de los anillos El retorno del Rey.jpg",
+        imagen: "../img/Adultos/El_Señor_de_los_anillos_El_retorno_del_Rey.jpg",
         id: 1,
         titulo: "El Señor de Los Anillos",
         subtitulo: "El Retorno del Rey",
@@ -12,6 +12,7 @@ const productos =
         },
 
     {
+        imagen: "../img/Adultos/portada_el-nudo_carlos-pagni_202302241836.jpg",
         id: 2,
         titulo: "El Nudo",
         subtitulo: "Politica",
@@ -21,6 +22,7 @@ const productos =
     },
 
     {
+        imagen: "../img/Adultos/El_Silmarillon.jpg",
         id: 3,
         titulo: "El Silmarillion",
         subtitulo: "El Silmarillion",
@@ -30,6 +32,7 @@ const productos =
     },
 
     {
+        imagen: "../img/Adultos/obama.jpg",
         id: 4,
         titulo: "Una Tierra Prometida",
         subtitulo: "",
@@ -39,6 +42,7 @@ const productos =
     },
 
     {
+        imagen: "../img/Adultos/Los_hijos_de_Hurin.jpg",
         id: 5,
         titulo: "Los Hijos de Hurin",
         subtitulo: "",
@@ -48,6 +52,7 @@ const productos =
     },
 
     {
+        imagen: "../img/Adultos/stephen_king.jpg",
         id: 6,
         titulo: "El Visitante",
         subtitulo: "",
@@ -57,6 +62,7 @@ const productos =
     },
 
     {
+        imagen: "../img/Adultos/Sensatez_y_sentimiento.jpg",
         id: 7,
         titulo: "Sensatez y Sentimiento",
         subtitulo: "",
@@ -66,6 +72,7 @@ const productos =
     },
 
     {
+        imagen: "../img/Adultos/Cumbres_barrascosas.jpg",
         id: 8,
         titulo: "Cumbres Borrascosas",
         subtitulo: "",
@@ -75,6 +82,7 @@ const productos =
     },
 
     {
+        imagen: "../img/Adultos/El_Retrato_de_Dorian_Gray.jpg",
         id: 9,
         titulo: "El Retrato de Dorian Gray",
         subtitulo: "",
